@@ -103,7 +103,8 @@ it('determines route key type for nullable', function () {
 
     expect($openApiDocument['paths']['/test/{user}']['get']['parameters'][0]['schema'])
         ->toBe([
-            'type' => ['integer', 'null'],
+            'type' => 'integer',
+            'nullable' => true,
         ]);
 });
 class NullableKey_RequestEssentialsExtensionTest_Controller
