@@ -66,7 +66,8 @@ abstract class Type
     {
         return array_merge(
             array_filter([
-                'type' => $this->nullable ? [$this->type, 'null'] : $this->type,
+                'type' => $this->type,
+                'nullable' => $this->nullable,
                 'format' => $this->format,
                 'description' => $this->description,
                 'enum' => count($this->enum) ? $this->enum : null,

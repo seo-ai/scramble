@@ -159,7 +159,8 @@ it('infers date column directly referenced in json as date-time', function () {
     ]);
 
     expect($components->getSchema(InferTypesTest_JsonResourceWithCarbonAttribute::class)->toArray()['properties']['created_at'])->toBe([
-        'type' => ['string', 'null'],
+        'type' => 'string',
+        'nullable' => true,
         'format' => 'date-time',
     ]);
 });
