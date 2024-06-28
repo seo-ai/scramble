@@ -4,11 +4,11 @@ properties:
     status: { type: object }
     user_id: { type: integer }
     title: { type: string }
-    settings: { type: [array, 'null'], items: {  } }
+    settings: { type: array, nullable: true, items: {  } }
     body: { type: string }
-    approved_at: { type: [string, 'null'], format: date-time }
-    created_at: { type: [string, 'null'], format: date-time }
-    updated_at: { type: [string, 'null'], format: date-time }
+    approved_at: { type: string, nullable: true, format: date-time }
+    created_at: { type: string, nullable: true, format: date-time }
+    updated_at: { type: string, nullable: true, format: date-time }
     parent: { $ref: '#/components/schemas/SamplePostModel' }
     children: { type: array, items: { $ref: '#/components/schemas/SamplePostModel' } }
     user: { $ref: '#/components/schemas/SampleUserModel' }

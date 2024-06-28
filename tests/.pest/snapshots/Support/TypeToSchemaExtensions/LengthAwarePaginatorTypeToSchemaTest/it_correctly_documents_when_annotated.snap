@@ -15,22 +15,16 @@
                         }
                     },
                     "first_page_url": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
+                        "type": "string",
+                        "nullable": true
                     },
                     "from": {
-                        "type": [
-                            "integer",
-                            "null"
-                        ]
+                        "type": "integer",
+                        "nullable": true
                     },
                     "last_page_url": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
+                        "type": "string",
+                        "nullable": true
                     },
                     "last_page": {
                         "type": "integer"
@@ -42,10 +36,8 @@
                             "type": "object",
                             "properties": {
                                 "url": {
-                                    "type": [
-                                        "string",
-                                        "null"
-                                    ]
+                                    "type": "string",
+                                    "nullable": true
                                 },
                                 "label": {
                                     "type": "string"
@@ -62,16 +54,12 @@
                         }
                     },
                     "next_page_url": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
+                        "type": "string",
+                        "nullable": true
                     },
                     "path": {
-                        "type": [
-                            "string",
-                            "null"
-                        ],
+                        "type": "string",
+                        "nullable": true,
                         "description": "Base path for paginator generated URLs."
                     },
                     "per_page": {
@@ -79,16 +67,12 @@
                         "description": "Number of items shown per page."
                     },
                     "prev_page_url": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
+                        "type": "string",
+                        "nullable": true
                     },
                     "to": {
-                        "type": [
-                            "integer",
-                            "null"
-                        ],
+                        "type": "integer",
+                        "nullable": true,
                         "description": "Number of the last item in the slice."
                     },
                     "total": {
