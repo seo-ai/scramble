@@ -7,7 +7,7 @@ properties:
     bar_string: { type: string, enum: ['2'] }
     bar_int: { type: integer, enum: [1] }
     bar_useless: { type: 'null' }
-    bar_nullable: { type: [integer, 'null'], enum: [3] }
+    bar_nullable: { type: integer, nullable: true, enum: [3] }
 required:
     - bar_different_literal_types
     - bar_identical_literal_types

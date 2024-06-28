@@ -113,7 +113,8 @@ it('supports optional parameters', function () {
             'required' => true,
             'description' => '**Optional**. The name of the payment preference to use',
             'schema' => [
-                'type' => ['string', 'null'],
+                'type' => 'string',
+                'nullable' => true,
                 'default' => 'paypal',
             ],
             'x-optional' => true,

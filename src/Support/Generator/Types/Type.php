@@ -101,7 +101,8 @@ abstract class Type
     {
         return array_merge(
             array_filter([
-                'type' => $this->nullable ? [$this->type, 'null'] : $this->type,
+                'type' => $this->type,
+                'nullable' => $this->nullable,
                 'format' => $this->format,
                 'contentMediaType' => $this->contentMediaType,
                 'contentEncoding' => $this->contentEncoding,
