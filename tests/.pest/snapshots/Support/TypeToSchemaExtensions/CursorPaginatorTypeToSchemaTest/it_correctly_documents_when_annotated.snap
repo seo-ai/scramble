@@ -12,10 +12,8 @@
                         }
                     },
                     "path": {
-                        "type": [
-                            "string",
-                            "null"
-                        ],
+                        "type": "string",
+                        "nullable": true,
                         "description": "Base path for paginator generated URLs."
                     },
                     "per_page": {
@@ -23,31 +21,23 @@
                         "description": "Number of items shown per page."
                     },
                     "next_cursor": {
-                        "type": [
-                            "string",
-                            "null"
-                        ],
+                        "type": "string",
+                        "nullable": true,
                         "description": "The \"cursor\" that points to the next set of items."
                     },
                     "next_page_url": {
-                        "type": [
-                            "string",
-                            "null"
-                        ],
+                        "type": "string",
+                        "nullable": true,
                         "format": "uri"
                     },
                     "prev_cursor": {
-                        "type": [
-                            "string",
-                            "null"
-                        ],
+                        "type": "string",
+                        "nullable": true,
                         "description": "The \"cursor\" that points to the previous set of items."
                     },
                     "prev_page_url": {
-                        "type": [
-                            "string",
-                            "null"
-                        ],
+                        "type": "string",
+                        "nullable": true,
                         "format": "uri"
                     }
                 },
